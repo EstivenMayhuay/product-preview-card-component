@@ -2,39 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Estiven Mayhuay</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="/css/app.css">
 
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <section role="contentinfo" class="cardProduct">
+    <header class="cardProduct__head">
+      <!-- <img src="/images/image-product-mobile.jpg" alt="" width="120"> -->
+    </header>
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="cardProduct__info">
+      <span class="cardProduct__type">PERFUME</span>
+      <h1 class="cardProduct__title">Gabrielle Essence Eau De Parfum</h1>
+      <p class="cardProduct__desc">A floral, solar and voluptuous interpretation composed by Olivier  Polge, Perfumer-Creator for the House of CHANEL</p>
+      <div class="cardProduct__price">
+        <h2 class="price">
+          <span class="price__number">$149.99</span>
+          <span class="price__number--discount">$169.99</span>
+        </h2>
+      </div>
+      <button class="cardProduct__btn">
+        <i class='bx bx-cart' style="font-size: 1.25rem"></i>
+        <span>Add To Cart</span>
+      </button>
+    </div>
+  </section>
 </body>
 </html>
