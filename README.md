@@ -1,3 +1,3 @@
 ## **Views**
 
-[view main]('./images/view.png')
+![view main]('./images/view.png')
